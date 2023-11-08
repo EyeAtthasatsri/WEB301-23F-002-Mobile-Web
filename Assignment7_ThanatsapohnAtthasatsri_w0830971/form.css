@@ -1,0 +1,162 @@
+/************
+Filename: webform.css
+Author: Eye Atthasatsri
+Copyright: 2023 - All rights reserved
+
+/************/
+
+
+/***************************************
+****************************************
+
+==================
+Table of Contents
+==================
+1. HTML Body and Main Styles
+2. Heading Styles
+3. Form Styles
+5. Button Styles
+6. Footer Styles
+
+
+
+******************************************
+******************************************/
+
+/**********************
+1. HTML Body and Main Styles
+**********************/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/************************
+2. Header Styles
+************************/
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+}
+
+/************************
+3. Form Styles
+************************/
+.two-columnForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #07ff8a;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#school-form,
+#personal-form,
+#payment-form {
+    padding: 10px;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="zip-code"]:invalid {
+    border-color: red;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="zip-code"]:valid {
+    border-color: green;
+}
+
+/************************
+5. Button Styles
+************************/
+
+.form-buttons {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.submit:hover {
+    background-color: rgb(139, 225, 122);
+}
+
+.cancel:hover {
+    background-color: rgb(189, 116, 116);
+}
+
+.swiper-button-next, 
+.swiper-button-prev {
+    padding-top: 30px;
+    height: 50%;
+    color: #000;
+
+}
+
+/******************************************  Tablet and Desktop (above 601px) Styles *******************************************/
+
+/* Style for tablet and desktop (601px and above) */
+@media (min-width: 601px) {
+        body {
+        background-color: #ff72b3; /* Replace with your desired color */
+    }
+
+    .two-columnForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px
+        
+    }
+
+    label {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    
+}
+
+/****************************************** Mobile-First Approach (up to 600px width) Styles *******************************************/
+
+/* Increase font size of labels for mobile devices */
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(44, 243, 124);
+    }
+
+    .two-columnForm {
+        background-color: #7f7bf4;
+    }
+
+    label {
+        font-size: 1.2em;
+        display: block;
+        margin: 10px 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+    padding-top: 50px;
+
+
+}
+}
+
