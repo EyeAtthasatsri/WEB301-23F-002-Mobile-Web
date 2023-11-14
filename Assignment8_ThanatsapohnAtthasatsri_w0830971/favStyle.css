@@ -1,0 +1,33 @@
+
+
+p {
+    font-family: 'Sometype Mono', monospace;
+}
+
+
+/* 6. Add different background colors for small, medium, and large screens */
+
+/*************Large lg > 992px Styles as Main style *****************/
+
+main {
+    background-color: #08fab7;
+}
+
+
+
+
+/************* medium md > 768px Styles *****************/
+@media (max-width: 768px) {
+
+    main {
+        background-color: #cbec38;
+    }
+}
+
+/************* Small sm > 576px Styles *****************/
+@media (max-width: 576px) {
+   main {
+        background-color: palevioletred;
+    }
+}
+
